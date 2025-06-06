@@ -41,7 +41,7 @@ const Timestamp = styled.div`
   align-items: center;
   justify-content: end;
 `;
-function Chat() {
+function Chat({ selectedModel }) {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -87,6 +87,7 @@ function Chat() {
           messages: [...data, { role: "user", content: query }]?.map(
             ({ role, content }) => ({ role, content })
           ),
+          selectedModel,
         });
         setData([
           {

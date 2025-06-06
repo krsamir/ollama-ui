@@ -5,7 +5,7 @@ import useAI from "../../hooks";
 import TextBox from "../TextBox";
 import { handleCopyClipBoard, regex } from "../../utility";
 
-function Completion() {
+function Completion({ selectedModel }) {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -25,7 +25,10 @@ function Completion() {
       console.info(regex.test(query));
       if (regex.test(query) && query?.length > 0) {
         setIsLoading(true);
-        const { data: res } = await generateContentOnQuery({ query });
+        const { data: res } = await generateContentOnQuery({
+          query,
+          selectedModel,
+        });
         const result = [...data];
         result.unshift({
           id: crypto?.randomUUID(),

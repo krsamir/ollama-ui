@@ -3,16 +3,16 @@ import axios from "axios";
 const BASE_URL = "http://localhost:11434";
 const MODEL = "qwen2.5:latest";
 
-export const generateCompletionApi = ({ query }) =>
+export const generateCompletionApi = ({ query, selectedModel }) =>
   axios.post(`${BASE_URL}/api/generate`, {
-    model: MODEL,
+    model: selectedModel,
     prompt: query,
     stream: false,
   });
 
-export const generateChatApi = ({ messages }) =>
+export const generateChatApi = ({ messages, selectedModel }) =>
   axios.post(`${BASE_URL}/api/chat`, {
-    model: MODEL,
+    model: selectedModel,
     messages,
     stream: false,
   });

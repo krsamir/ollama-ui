@@ -122,8 +122,8 @@ function Index() {
         </Select>
       </Container>
       <ChatContainer $isLoading={isLoading}>
-        {type === "chat" && <Chat />}
-        {type === "completion" && <Completion />}
+        {type === "chat" && <Chat selectedModel={selectedModel} />}
+        {type === "completion" && <Completion selectedModel={selectedModel} />}
       </ChatContainer>
     </>
   );
