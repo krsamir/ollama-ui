@@ -30,6 +30,8 @@ const ReplyItem = styled.div`
 const Content = styled.div`
   line-height: 1.4em;
   padding-bottom: 5px;
+  width: 500px;
+  word-wrap: break-word;
 `;
 
 const Timestamp = styled.div`
