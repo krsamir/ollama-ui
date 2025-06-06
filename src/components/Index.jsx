@@ -105,6 +105,9 @@ function Index() {
         </Select>
         <Separator />
         {metaData?.version && <Models>{`OLLAMA ${metaData?.version}`}</Models>}
+        {selectedModel && (
+          <Models>{`Model ${selectedModel?.toUpperCase()}`}</Models>
+        )}
         <Select
           name="type_selector"
           id="type_selector"
