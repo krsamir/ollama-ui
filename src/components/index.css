@@ -1,0 +1,82 @@
+.ollama-main-container {
+  margin: 20px;
+}
+
+.ollama-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: end;
+}
+
+.ollama-shadow {
+  box-shadow: var(--mui-shadows-8, 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12));
+}
+
+.ollama-text {
+  flex: 1;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 38px;
+  resize: none;
+}
+
+.ollama-btn {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 38px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ollama-main-response {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  overflow-x: auto;
+}
+
+.ollama-answer-box {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 38px;
+  margin: 10px 100px;
+  line-height: 1.2em;
+  font-size: 18px;
+}
+
+.ollama-timestamp {
+  text-align: end;
+  font-size: 12px;
+}
+
+.ollama-q-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.ollama-copy {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ollama-question {
+  border-bottom: 1px inset #b6a6a6;
+  padding-bottom: 2px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.ollama-markdown {
+  flex: 1;
+}
+
+.copy-icon{
+  cursor: pointer;
+}
