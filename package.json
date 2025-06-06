@@ -7,7 +7,8 @@
     "dev": "vite --port=3000 --open",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "cd dist && http-server . --port 3002 -o"
   },
   "dependencies": {
     "axios": "^1.9.0",
